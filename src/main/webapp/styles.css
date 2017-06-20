@@ -1,0 +1,22 @@
+/**
+ * copyright (c) 2011-2017 Optimyth Software Technologies. All rights reserved.
+ */
+ 
+body {
+    background-color: #ffffff;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+button {
+    width: 300px;
+    background-color: #0085cf;
+    background-image: none;
+    border: 1px solid #ccc;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #006ba6;
+}

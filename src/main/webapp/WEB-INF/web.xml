@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<display-name>Kiuwan Authentication Service</display-name>
+
+	<!-- Define a Security Constraint on this Application -->
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Kiuwan Authentication Service</web-resource-name>
+			<url-pattern>/index.jsp</url-pattern>
+		</web-resource-collection>
+		
+		<auth-constraint>
+			<role-name>kiuwan_user</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+    <login-config>
+        <auth-method>BASIC</auth-method>
+    </login-config>
+    
+    <security-role>
+		<role-name>kiuwan_user</role-name>
+	</security-role>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

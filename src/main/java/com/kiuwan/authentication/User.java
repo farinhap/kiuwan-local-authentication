@@ -1,4 +1,8 @@
-package com.optimyth.kiuwan.authentication;
+/**
+ * copyright (c) 2011-2017 Optimyth Software Technologies. All rights reserved.
+ */
+
+package com.kiuwan.authentication;
 
 import java.util.Date;
 
@@ -34,6 +38,10 @@ public class User {
 	
 	public String getUsername() {
 		return username;
+	}
+	
+	public String toString() {
+		return this.username + "{" + this.date + "}";
 	}
 }
 
